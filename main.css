@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    height: 100%;
+      scroll-behavior: smooth;
+  }
+  
+  :root {
+    --navbar-bgcolor: #112031;
+    --font-color: #EEEEEE;
+    --header-bgcolor: #152D35;
+  }
+  
+  /* START OF NAVBAR */
+  
+  nav {
+    margin-top:4.1em;
+    
+  }
+  
+  nav ul {
+    display: flex;
+    min-width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--navbar-bgcolor);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* border: 2px solid red; */
+    z-index: 10;
+   
+   
+  }
+  
+  nav li {
+    list-style-type: none;
+    display: flex;
+    /* border: 2px solid red; */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 1 rem;
+    display: block;
+    /* border: 2px solid red; */
+    padding: 1.05em;
+    font-weight: 600;
+    
+  }
+  
+  nav a:hover {
+    background: #889EAF;
+    box-shadow: 1.5px 2px 1px  #2C3333;
+    
+  }
+  
+  /* END OF NAVBAR */
+  
+  
+  /* START OF HEADER */
+  header{
+  background-color: var(--header-bgcolor);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.7em;
+  box-shadow: 0px -1.5px 10px 3px  black;
+  }
+  
+  header p {
+    color: #57CC99;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 4em;
+  }
+  
+  h1 {
+   font-size: 2.5rem;
+   color: #D4ECDD;
+  }
+   /* END OF HEADER */
